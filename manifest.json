@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Refresh my site!!!!",
+  "description": "Stop logging me out and keep my site sessions open",
+  "version": "1.0",
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "page_action": {
+    "default_popup": "popup.html"
+  }
+ }
